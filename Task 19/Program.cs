@@ -11,7 +11,8 @@ bool IsPalindrome(string S) //универсальная функция - опр
 
     for (int i = 0; i < L / 2; i++)
     {
-        if (!(S.Substring(i, 1) == S.Substring(L - i - 1, 1))) return false;
+        //if (!(S.Substring(i, 1) == S.Substring(L - i - 1, 1))) return false;
+        if (!(S[i] == S[L - i - 1])) return false;
     }
     return true;
 }
